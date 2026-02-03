@@ -24,7 +24,11 @@ To build `axis.iso` from source:
 1. **Install dependencies:** `nasm`, `gcc`, `xorriso`, `qemu`.
 2. **Compile & Link:**
 ```bash
-   # See build instructions in the repository
+nasm -f elf32 src/boot.asm -o boot.o
+nasm -f elf32 src/gdt_flush.asm -o gdt_flush.o
+gcc -m32 -ffreestanding -c src/kernel.c -o kernel.o
+gcc -m32 -ffreestanding -c src/gdt.c -o gdt.o
+ld -m elf_i386 -T linker.ld -o axis.bin boot.o kernel.o gdt.o gdt_flush.o
 ```
 Run in QEMU:
 ```bash
