@@ -1,6 +1,15 @@
 # AxisOS 🎯
 > **Current Version:** v0.0.3 Alpha (GDT Implemented)
 
+## ⏸ Project Status: Paused
+⚠️ **This project is currently paused / suspended.**  
+Development is temporarily stopped and no new features or fixes are planned at the moment.
+
+The repository is kept public for educational and reference purposes.  
+Updates may resume in the future, but there is no ETA.
+
+---
+
 **AxisOS** is a custom operating system kernel written from scratch in **C** and **Assembly**, designed for the x86 architecture.
 
 ## 🚀 Features Status
@@ -10,8 +19,8 @@
 | **Video Driver** | ✅ | VGA Text Mode (80x25) & Color Support |
 | **GDT** | ✅ | Global Descriptor Table initialized |
 | **Logs** | ✅ | System status messages & ASCII Logo |
-| **IDT** | ⏳ | Interrupt Descriptor Table (*In Progress*) |
-| **Keyboard** | ⏳ | Input driver (*Coming soon*) |
+| **IDT** | ⏳ | Interrupt Descriptor Table (*In Progress before pause*) |
+| **Keyboard** | ⏳ | Input driver (*Planned*) |
 
 ## 🧠 Latest Update (v0.0.3)
 In this release, the **Global Descriptor Table (GDT)** was successfully implemented. This is a critical step for memory management and stability.
